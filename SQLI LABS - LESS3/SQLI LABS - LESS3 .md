@@ -18,7 +18,7 @@ We will get the names of the tales that are present in the database using the fo
 
 ![](Aspose.Words.8fe778a6-caab-41fa-a359-466175107aa0.005.jpeg)
 
-![](Aspose.Words.8fe778a6-caab-41fa-a359-466175107aa0.008.jpeg)
+![](Aspose.Words.8fe778a6-caab-41fa-a359-466175107aa0.003.jpeg)
 
 ![](Aspose.Words.8fe778a6-caab-41fa-a359-466175107aa0.006.jpeg)
 
@@ -30,8 +30,8 @@ Now we will replace the tables by columns and collect the data from the user by 
 
 On executing this it will give us a list of usernames and passcodes as follows:
 
+![](Aspose.Words.8fe778a6-caab-41fa-a359-466175107aa0.008.jpeg)
 
 
 
 
-![](Aspose.Words.8fe778a6-caab-41fa-a359-466175107aa0.003.jpeg)
